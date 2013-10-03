@@ -11,8 +11,10 @@
     <form id="form1" runat="server">
     <div>
     
-        LISTADO DE BASE DE DATO</div>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Database1ConnectionString %>" SelectCommand="SELECT [Id], [Nombre], [Apellido], [Naccion], [Ano], [DNI], [Email], [Tlf], [comment] FROM [Table1]"></asp:SqlDataSource>
+        LISTADO DE BASE DE DATO<br />
+        <br />
+        <br />
+        <br />
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Id" DataSourceID="SqlDataSource1">
             <Columns>
                 <asp:CommandField ShowSelectButton="True" />
@@ -27,6 +29,8 @@
                 <asp:BoundField DataField="comment" HeaderText="comment" SortExpression="comment" />
             </Columns>
         </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString2 %>" SelectCommand="SELECT [Id], [Nombre], [Apellido], [Naccion], [Ano], [DNI], [Email], [Tlf], [comment] FROM [Table1]"></asp:SqlDataSource>
+        </div>
     </form>
 </body>
 </html>
