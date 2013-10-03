@@ -8,10 +8,7 @@
                 <h2>Manantial y Galeria 3</h2>
             </hgroup>
             <p>
-                To learn more about ASP.NET, visit <a href="http://asp.net" title="ASP.NET Website">http://asp.net</a>.
-                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET.
-                If you have any questions about ASP.NET visit
-                <a href="http://forums.asp.net/18.aspx" title="ASP.NET Forum">our forums</a>.
+            
             </p>
         </div>
     </section>
@@ -20,10 +17,12 @@
     <h3>We suggest the following:</h3>
     <ol class="round">
         <li class="one">
-            <h5>Getting Started</h5>
-            ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            <a href="http://go.microsoft.com/fwlink/?LinkId=245146">Learn more…</a>
+            <asp:LoginView ID="LoginView1" runat="server" ViewStateMode="Disabled">
+                <LoggedInTemplate>
+                         LISTADO DE USUARIOS GALERIA
+                        <a href="Lista_BD.aspx" title="Listado">Listado</a>.
+                </LoggedInTemplate>
+            </asp:LoginView>    
         </li>
         <li class="two">
             <h5>Add NuGet packages and jump-start your coding</h5>
